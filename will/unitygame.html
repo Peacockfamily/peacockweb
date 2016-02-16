@@ -1,0 +1,153 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+    <p><a href="home.html" title="go back">return to main website</a></p>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>The Adventure of Ted the Cup</title>
+		<script type='text/javascript' src='https://ssl-webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/jquery.min.js'></script>
+		<script type="text/javascript">
+		<!--
+		var unityObjectUrl = "http://webplayer.unity3d.com/download_webplayer-3.x/3.0/uo/UnityObject2.js";
+		if (document.location.protocol == 'https:')
+			unityObjectUrl = unityObjectUrl.replace("http://", "https://ssl-");
+		document.write('<script type="text\/javascript" src="' + unityObjectUrl + '"><\/script>');
+		-->
+		</script>
+		<script type="text/javascript">
+		<!--
+			var config = {
+				width: 960, 
+				height: 600,
+				params: { enableDebugging:"0" }
+				
+			};
+			var u = new UnityObject2(config);
+
+			jQuery(function() {
+
+				var $missingScreen = jQuery("#unityPlayer").find(".missing");
+				var $brokenScreen = jQuery("#unityPlayer").find(".broken");
+				$missingScreen.hide();
+				$brokenScreen.hide();
+				
+				u.observeProgress(function (progress) {
+					switch(progress.pluginStatus) {
+						case "broken":
+							$brokenScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$brokenScreen.show();
+						break;
+						case "missing":
+							$missingScreen.find("a").click(function (e) {
+								e.stopPropagation();
+								e.preventDefault();
+								u.installPlugin();
+								return false;
+							});
+							$missingScreen.show();
+						break;
+						case "installed":
+							$missingScreen.remove();
+						break;
+						case "first":
+						break;
+					}
+				});
+				u.initPlugin(jQuery("#unityPlayer")[0], "Builds.unity3d");
+			});
+		-->
+		</script>
+		<style type="text/css">
+		<!--
+		body {
+			font-family: Helvetica, Verdana, Arial, sans-serif;
+			background-color: white;
+			color: black;
+			text-align: center;
+		}
+		a:link, a:visited {
+			color: #000;
+		}
+		a:active, a:hover {
+			color: #666;
+		}
+		p.header {
+			font-size: small;
+		}
+		p.header span {
+			font-weight: bold;
+		}
+		p.footer {
+			font-size: x-small;
+		}
+		div.content {
+			margin: auto;
+			width: 960px;
+		}
+		div.broken,
+		div.missing {
+			margin: auto;
+			position: relative;
+			top: 50%;
+			width: 193px;
+		}
+		div.broken a,
+		div.missing a {
+			height: 63px;
+			position: relative;
+			top: -31px;
+		}
+		div.broken img,
+		div.missing img {
+			border-width: 0px;
+		}
+		div.broken {
+			display: none;
+		}
+		div#unityPlayer {
+			cursor: default;
+			height: 600px;
+			width: 960px;
+		}
+		-->
+		</style>
+	</head>
+	<body>
+		<h1 class="text-center">The Adventure of Ted the Cup</h1>
+        <div class="col-lg-4 col-sm-12">
+      <h2>by Will Peacock</h2>
+      </div>
+		<div class="content">
+			<div id="unityPlayer">
+				<div class="missing">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now!!!">
+						<img alt="Unity Web Player. Install now!" src="http://webplayer.unity3d.com/installation/getunity.png" width="193" height="63" />
+					</a>
+				</div>
+				<div class="broken">
+					<a href="http://unity3d.com/webplayer/" title="Unity Web Player. Install now! Restart your browser after install.">
+						<img alt="Unity Web Player. Install now! Restart your browser after install." src="http://webplayer.unity3d.com/installation/getunityrestart.png" width="193" height="63" />
+					</a>
+				</div>
+			</div>
+		</div>
+        <p class="footer">&laquo; Made in <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity</a> game engine &raquo;</p>
+        <div class="col-lg-4 col-sm-12">
+      <h2>Controls</h2>
+      <p>WASD - Move Player</p>
+      <p>Spacebar - Jump</p>
+      <p>Hold Down Left Click On Mouse - Fire Coffee</p>
+      <p>Horizontal Mouse Movement - Rotate Player</p>
+      <p>Vertical Mouse Movement - Aim Coffee Up and Down</p>
+      <p>Hold Down Right Click On Mouse - Free Cam Mode (buggy)</p>
+    </div>
+    <div class="col-lg-4 col-sm-12">
+    <h2>Credits</h2>
+      <p>The game was developed with <a href="http://unity3d.com/unity/" title="Go to unity3d.com">Unity's</a> 3D game engine. The songs are "Bushwick Tarantella Loop" and "Batty McFaddin" by Kevin MacLeod of <a href="http://incompetech.com/" title="Go to incompetech.com">incompetech.com</a>. All 3D models were custom made in <a href="https://www.blender.org/" title="Go to blender.org">Blender</a>. The cup model was based off of <a href="https://www.youtube.com/watch?v=y__uzGKmxt8">tutor4u's</a> tutorial. The human model was based off of <a href="https://www.youtube.com/watch?v=DiIoWrOlIRw">Sebastian Lague's</a> tutorial. Some of the textures might be copyrighted, idk.</p>
+    </div>
+</body>
+</html>
