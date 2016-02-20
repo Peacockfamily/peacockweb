@@ -75,6 +75,11 @@ a:link, a:visited {
   background-repeat: no-repeat;
   background-size: cover;
 }
+#carousel1 {
+
+}
+.carousel-inner{
+}
 .title_strip{
   height: 70px;
   width:100%;
