@@ -5,10 +5,10 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Landing</title>
-<link href="../css/peacockweb.css" rel="stylesheet" type="text/css">
 <link href="../css/singlePageTemplate.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="../css/navBar.css">
 <link href="../css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="../css/peacockweb.css" rel="stylesheet" type="text/css">
 <!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
 <script>var __adobewebfontsappname__="dreamweaver"</script>
 <script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
@@ -32,9 +32,6 @@
      	    <li class="active">Home</li>
      	    <li><a href="projects.html">Projects</a></li>
      	    <li><a href="resume.html">Resume</a></li>
-          <li><a href="who.html">About Me</a></li>
-             <li><a href="where_going.html">Where I'm Going</a></li>
-      
       </div>
      </nav>
      <br>
@@ -62,20 +59,20 @@
     <div class="thumbnail">
       <h1 class="stats">Javascript</h1>
       <h4>FUNCTION</h4>
-      <p>Making pages more interactive</p>
+      <p>Making interactive pages</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">HTML / CSS</h1>
+      <h1 class="stats">HTML/CSS</h1>
       <h4>THE VIEW</h4>
       <p>A polished experience</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">Node / Express</h1>
+      <h1 class="stats">NodeJS </h1>
       <h4>SERVER</h4>
       <p>Back-end stability</p>
     </div>
     <div class="thumbnail">
-      <h1 class="stats">Mongo &amp; SQL</h1>
+      <h1 class="stats">MongoDB</h1>
       <h4>DATABASE</h4>
       <p>Data storage and retrieval</p>
     </div>
@@ -91,11 +88,12 @@
   <footer>
     <div class="footer_column">
       <h3>ABOUT</h3>
-      <img src="../images/yosemiteSquare.jpg" alt=""/>
+      <img src="../images/yosemiteSquare.jpg" alt="" id="yosemite"/>
       <p>Stay up to date with me as I dive into the crazy world of technology. There are big changes ahead, and I am thrilled to have new challenges to engage with as I learn new skills.</p>
     </div>
     <div class="footer_column">
-      <h3>LOCATION</h3>
+      <div class="button">
+      <h3>LOCATION</h3></div>
       <div id="map"></div>
         <script>
           function initMap() {
@@ -122,5 +120,13 @@
 <!-- Main Container Ends -->
 <script src="../js/jquery-1.11.3.min.js" type="text/javascript"></script>
 <script src="../js/bootstrap.js" type="text/javascript"></script>
+  <script type="text/javascript">
+      var _mfq = _mfq || [];
+      (function () {
+      var mf = document.createElement("script"); mf.type = "text/javascript"; mf.async = true;
+      mf.src = "//cdn.mouseflow.com/projects/bc7a0633-e5c9-4da5-ba04-3caa994b6e15.js";
+      document.getElementsByTagName("head")[0].appendChild(mf);
+    })();
+  </script>
 </body>
 </html>

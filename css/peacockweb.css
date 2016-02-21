@@ -69,14 +69,17 @@ a:link, a:visited {
   margin-left: 0 ;
   margin-right: 50%;
 }
+#footer_column {
+  position: relative;
+}
 .hero{
 	clear:all;
   background-image: url("../images/cafeArt.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-#carousel1 {
-
+.stats {
+  height:10%;
 }
 .carousel-inner{
 }
@@ -101,7 +104,8 @@ a:link, a:visited {
   align-content: center;
 }
 #map{
-  width: 400px;
+  position: relative;
+  width: 100%;
   height: 200px;
   background-color: #CCC;
   margin-left: auto;
@@ -115,6 +119,12 @@ a:link, a:visited {
   border-width:3px;
   border-color:#111;
   background-color:#E3E3E3;
+}
+.thumbnail h1 {
+  font-size: 2em;
+}
+.thumbnail p {
+  font-size: .8em;
 }
 #drag1, #drag2, #drag3, #drag4{
   width: 80px;
@@ -145,4 +155,8 @@ a:link, a:visited {
   background-image: url("../images/fam.jpg");
   background-size: 350px 350px;
   background-position: center;
+}
+#yosemite {
+  position: relative;
+  width: 100%
 }

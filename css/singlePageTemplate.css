@@ -198,7 +198,7 @@ footer {
 	content-align:center;
 }
 footer .footer_column h3 {
-	color: #B3B3B3;
+	/*color: #B3B3B3;*/
 	text-align: center;
 }
 footer .footer_column p {
@@ -443,7 +443,8 @@ nav ul li {
 	text-align: center;
 }
 .thumbnail {
-	width: 50%;
+	width: 45%;
+	margin: 2.5%;
 }
 .parallax {
 	margin-top: 0px;
@@ -479,6 +480,7 @@ nav ul li {
 }
 .thumbnail {
 	width: 50%;
+	height: 15vh;
 }
 .text_column {
 	width: 100%;
