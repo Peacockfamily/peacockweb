@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="xWin">
+        <div class="winBox">
+            <h1>Player One Wins!</h1>
+            <h3>Play Again?</h3>
+            <button class="reset"><a href="javascript:location.reload(true)">click here</a></button>
+        </div>
+    </div>
+    <div id="yWin">
+        <div class="winBox">
+            <h1>Player Two Wins!</h1>
+            <h3>Play Again?</h3>
+            <button class="reset"><a href="javascript:location.reload(true)">click here</a></button>
+        </div>
+    </div>
+    <header>
+        <h2 class="playerTurn">Player One's Turn</h2>
+    </header>
+    <header2>
+        <h2 class="playerTwo">Player Two's Turn</h2>
+    </header2>
+    <div class="board">
+        <div class="row">
+            <div id="cell0" class="tile"></div>
+            <div id="cell1" class="tile"></div>
+            <div id="cell2" class="tile"></div>
+        </div>
+        <div class="row">
+            <div id="cell3" class="tile"></div>
+            <div id="cell4" class="tile"></div>
+            <div id="cell5" class="tile"></div>
+        </div>
+        <div class="row">
+            <div id="cell6" class="tile"></div>
+            <div id="cell7" class="tile"></div>
+            <div id="cell8" class="tile"></div>
+        </div>
+    </div>
+    <button id = 'reset'><a href="javascript:location.reload(true)">Reset</a></button>
+    <img src="Tic%20Tac%20Toe.png" alt="" class="background">
+    <script src="script.js"></script>
+
+</body>
+
+</html>
