@@ -7,11 +7,12 @@ var playerOneTurn = true;
 var tile = [];
 var choices = [];
 
+//my sloppy win array setup
 function grabCells() {
     for (i = 0; i < 9; i++) {
         var id = "cell" + i;
         var foo = id;
-        tile.push(document.getElementById(foo))
+        tile.push(document.getElementById(foo));
     }
 }
 grabCells();
@@ -22,9 +23,10 @@ var win4 = [tile[0], tile[3], tile[6]];
 var win5 = [tile[1], tile[4], tile[7]];
 var win6 = [tile[2], tile[5], tile[8]];
 var win7 = [tile[0], tile[4], tile[8]];
-var win8 = [tile[2], tile[5], tile[6]];
+var win8 = [tile[2], tile[4], tile[6]];
 var winners = [win1, win2, win3, win4, win5, win6, win7, win8];
 
+//using hidden properties to toggle whose turn it is
 function whoseTurn() {
     if (playerOneTurn) {
         turnLabel.style.visibility = 'visible';

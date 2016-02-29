@@ -81,10 +81,11 @@ h2{
 #reset {
     position:absolute;
     top:90vh;
-    left:42%;
+    left:50%;
     width:100px;
     height: 40px;
     border-radius: 5px;
+    margin-left: -50px;
 }
 a {
     text-decoration: none;
