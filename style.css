@@ -78,7 +78,7 @@ h2{
     z-index:2;
     clear:all; 
 }
-button {
+#reset {
     position:absolute;
     top:90vh;
     left:42%;
