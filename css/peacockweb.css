@@ -89,7 +89,14 @@ a:visited {
 .stats {
 	height: 10%;
 }
-.carousel-inner {}
+#carousel1 {
+	max-height:75vh;
+}
+.carousel-inner{
+	max-height: 75vh;
+	width:100%;
+	
+}
 .title_strip {
 	height: 70px;
 	width: 100%;
