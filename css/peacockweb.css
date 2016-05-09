@@ -30,9 +30,9 @@ p {
 
 header {
 	text-align: center;
-	width: 115%;
-	margin-left: -2.5%;
-	margin-right: -2.5%;
+	position:relative;
+	width: 100vw;
+	left: -13px;
 }
 .text_column {
 	text-indent: 50px;
@@ -64,13 +64,15 @@ a:visited {
 .center-block {
 	height: 40%;
 }
+.text-center {
+	display:block;
+}
 .peacockLogo {
 	background-color: #183540;
 	text-align: left;
-	border-radius: 0;
 	max-height: 70px;
 	width: 100%;
-	border-radius: 5px;
+	border-radius: 0 0 10px 10px;
 }
 .peacockLogo .profileLogo {
 	margin: 7px;
@@ -98,7 +100,7 @@ a:visited {
 .carousel-inner{
 	max-height: 75vh;
 	width:100%;
-	
+
 }
 .title_strip {
 	height: 70px;
@@ -122,11 +124,11 @@ a:visited {
 }
 #map {
 	position: relative;
-	width: 100%;
+	left:50%
+	width: 80%;
 	height: 200px;
 	background-color: #CCC;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 15px;
 }
 .dragspace {
 	position: relative;
@@ -187,4 +189,27 @@ a:visited {
 .blogNav {
 	float: right;
 	max-width: 20%;
+}
+.rectangle{
+	height: 80px;
+	width: 160px;
+	color: white;
+	position:relative;
+	float:center;
+	margin: 15px;
+	margin-left:auto;
+	margin-right: auto;
+	border: 8px solid white;
+}
+.img-link {
+	max-height: 120px;
+	float:center;
+	margin:20px;
+}
+.block {
+	position:relative;
+	float:right;
+	left:50%;
+	text-align:left;
+	display:block;
 }
